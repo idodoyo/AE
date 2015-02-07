@@ -1,0 +1,40 @@
+[Graphic 1]
+Bottom=0.495268
+DataIdentifier=1714 0 0 2 0 0 0
+Identifier=GRAPHIC_WAVE
+Left=0.472107
+Right=1
+Second=1
+Top=0
+Voltage=10
+
+[Graphic 2]
+Bottom=1
+DataIdentifier=1714 0 0 4 0 0 0
+Identifier=GRAPHIC_WAVE
+Left=0
+Right=0.472107
+Second=1
+Top=0.495268
+Voltage=10
+
+[Graphic 3]
+Bottom=1
+DataIdentifier=1714 0 0 8 0 0 0
+Identifier=GRAPHIC_WAVE
+Left=0.472107
+Right=1
+Second=1
+Top=0.495268
+Voltage=10
+
+[Graphic 4]
+Bottom=0.495268
+DataIdentifier=1002 0 0 1 0 0 0
+Identifier=GRAPHIC_WAVE
+Left=0
+Right=0.472107
+Second=1
+Top=0
+Voltage=10
+
