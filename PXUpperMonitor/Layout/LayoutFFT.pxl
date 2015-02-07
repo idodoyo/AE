@@ -1,0 +1,22 @@
+[Graphic 1]
+Bottom=0.5
+DataIdentifier=1001 0 0 1 0 0 0
+HitWaveOnly=0
+Identifier=GRAPHIC_WAVE
+Left=0
+Right=1
+Second=1
+Top=0
+Voltage=10
+VoltageOffset=0
+
+[Graphic 2]
+BeginAmplitude=35
+Bottom=1
+DataIdentifier=1001 0 0 1 0 0 0
+Identifier=GRAPHIC_FFT
+Left=0
+Right=1
+Top=0.5
+TotalAmplitude=60
+

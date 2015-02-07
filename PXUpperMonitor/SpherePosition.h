@@ -1,0 +1,142 @@
+#pragma once
+#include "afxwin.h"
+
+#include "DataHandle\DataTypes.h"
+#include "StaticSpherePosition.h"
+#include "DataHandler.h"
+#include "LinearTransfer.h"
+#include "ThreadControlEx.h"
+#include "resource.h"
+#include "GraphicManager.h"
+#include "ArgListTransfer.h"
+#include "ArgDataFectcher.h"
+#include "GraphicSphere.h"
+#include "NewtonIterator.h"
+#include "NormalGraphic.h"
+#include "GraphicNormal3D.h"
+
+
+// CSpherePosition dialog
+
+class CSpherePosition : public CNormalGraphic, public INewtonIteratorProtocol< 3 >
+{
+
+public:
+	CSpherePosition(CWnd* pParent = NULL);   // standard constructor
+	virtual ~CSpherePosition();
+
+public:
+	static IGraphicProtocol * CreateProto(){ return new CSpherePosition; }
+	
+	virtual HSString Identifier(){ return "GRAPHIC_SPHERE_POSITION"; }
+	virtual HSString Name(){ return "«Ú√Ê∂®Œª";  }
+
+	virtual HSBool Start();
+
+	virtual HSBool Save( CINIConfig *pIniConfig, string tGroup );
+	virtual HSBool Load( CINIConfig *pIniConfig, string tGroup );	
+	
+	virtual HSInt LargeIcon(){ return IDB_BITMAP_SPHERE; }
+	
+	virtual IGraphicPropertyProtocol * CreatePropertyDlg( CWnd *pParent );
+
+	virtual IGraphicProtocol * Clone(){ return new CSpherePosition; }
+
+	virtual HSVoid SetDataIdentifier( DEVICE_CH_IDENTIFIER tIdentifier );
+
+public:
+	virtual HSBool GraphicNeedRefresh();	
+
+	virtual HSVoid InitDialog();	
+	virtual HSVoid ViewResized( CRect &tRect );
+
+	virtual HSBool IsDataExportNeeded();
+	virtual HSVoid ExportData( CDataExportHelper &tDataExport );
+
+	virtual HSVoid ResetData( CMainFrame* pMainFrame );		
+
+	virtual HSVoid AutoSetSensors();
+
+	virtual HSVoid Graphic3DRefresh( HSBool tNeedInvalidate );
+
+	virtual HSVoid AutoRatate();
+
+public:	
+	virtual HSVoid FocusWnd();
+
+public:
+	typedef struct PositionSensor
+	{
+		HSDouble AngleDirction;
+		HSDouble AngleUp;
+		HSBool Forbid;
+		HSBool IsOn;
+		DEVICE_CH_IDENTIFIER DataIdentifier;	
+		CArgListTransfer *ArgTransfer;		
+		vector< CArgTableManager::ArgItem > ArgList;
+		vector< HSBool > ArgHandled;
+		HSInt Index;
+	} PositionSensor;
+
+public:	
+	HSVoid UpdatePositionSensor( HSInt tIndex, HSDouble tAngleD, HSDouble tAngleU, HSBool tForbid, HSBool tIsOn, DEVICE_CH_IDENTIFIER tDataIdentifier );
+	PositionSensor * GetPositionSensor( HSInt tIndex );
+
+	HSVoid SetFocusSensor( HSInt tIndex );
+	HSVoid SetMaterialRadius( HSDouble tRadius ){ mMaterialRadius = tRadius; }
+	HSDouble MaterialRadius(){ return mMaterialRadius; }
+	HSVoid RefreshSensors();	
+
+	HSInt HitRadius(){ return mHitRadius; }
+	HSVoid SetHitRadius( HSInt tHitRadius );
+
+private:
+	typedef struct HitCalcInfo
+	{
+		HSInt SensorIndex;
+		HSUInt ArgIndex;
+		map< HSInt, PositionSensor > *PositionSensors;
+	} HitCalcInfo;	
+
+	typedef struct SensorDistanceInfo
+	{
+		HSInt SensorIndex;
+		HSDouble Distance;		
+	} SensorDistanceInfo;
+
+	
+	HSVoid InitPositionSensors();
+	HSBool CalcHitPosition( HSInt tSensor, HSUInt tArgIndex );
+	HSBool IsHitQualified( HSInt64 tDuration, HSDouble tVelocity, HSInt tSensorOne, HSInt tSensorTwo );
+	HSBool IsResQualified( HSDouble tAngleD, HSDouble tAngleU, vector< CSpherePosition::HitCalcInfo > &tHitSensors, HSDouble &tEnergy );	
+	HSBool PositionWithHitSensor( HSDouble tInitX0[ 3 ], vector< HitCalcInfo > &tHitSensors, vector< HSInt > &tHitSensorsIndex, vector< CGraphicSphere::HitPosition > &tHitPos );
+	HSDouble DistanceWithSensorIndex( HSDouble tAngleD, HSDouble tAngleU, HSInt tSensor );			
+	HSDouble CorrectAngle( HSDouble tAngle, HSDouble tTop );
+
+	static HSDouble AtoR( HSDouble tAngle ){ return 3.14159265 * tAngle / 180.0; }
+	static HSDouble RtoA( HSDouble tRadius ){ return tRadius * 180.0 / 3.14159265; }
+
+	virtual HSVoid GetFunctionMValue( HSDouble tX0[ 3 ], HSDouble *tPoints[ 3 ], HSDouble tRes[ 3 ][ 3 ] );	
+	virtual HSVoid GetFunctionValue( HSDouble tX0[ 3 ], HSDouble *tPoints[ 3 ], HSDouble tRes[ 3 ] );
+
+	static bool HitSensorComapre( HitCalcInfo &t1, HitCalcInfo &t2 );
+	static bool HitSensorDistanceComapre( SensorDistanceInfo &t1, SensorDistanceInfo &t2 );
+
+private:
+	map< HSInt, PositionSensor > mPositionSensors;	
+
+	CGraphicSphere *mSphere;
+
+	map< HSInt, CGraphicSphere::SensorInfo > mSensors;
+	list< CGraphicSphere::HitPosition > mHitsPosition;
+
+	HSDouble mMaterialRadius;
+
+	HSInt mHitRadius;
+
+	enum { MAX_SENSOR_NUM_IN_CENTER_LINE = 8, DEFALUT_SENSOR_NUM = 21 };
+
+	CNewtonIterator< 3 > mNewtonIterator;
+
+	CStaticSpherePosition mStaticSphere;
+};

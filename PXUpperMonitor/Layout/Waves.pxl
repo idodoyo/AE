@@ -1,0 +1,48 @@
+[Graphic 1]
+Bottom=0.5
+DataIdentifier=1714 0 0 2 0 0 0
+HitWaveOnly=0
+Identifier=GRAPHIC_WAVE
+Left=0.4986301363
+Right=1
+Second=1
+Top=0
+Voltage=10
+VoltageOffset=0
+
+[Graphic 2]
+Bottom=1
+DataIdentifier=1714 0 0 4 0 0 0
+HitWaveOnly=0
+Identifier=GRAPHIC_WAVE
+Left=0
+Right=0.4986301363
+Second=1
+Top=0.5
+Voltage=10
+VoltageOffset=0
+
+[Graphic 3]
+Bottom=1
+DataIdentifier=1714 0 0 8 0 0 0
+HitWaveOnly=0
+Identifier=GRAPHIC_WAVE
+Left=0.4986301363
+Right=1
+Second=1
+Top=0.5
+Voltage=10
+VoltageOffset=0
+
+[Graphic 4]
+Bottom=0.5
+DataIdentifier=1714 0 0 1 0 0 0
+HitWaveOnly=0
+Identifier=GRAPHIC_WAVE
+Left=0
+Right=0.4986301363
+Second=1
+Top=0
+Voltage=10
+VoltageOffset=0
+

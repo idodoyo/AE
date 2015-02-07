@@ -1,0 +1,22 @@
+[Graphic 1]
+Bottom=1
+DataIdentifier=0 0 0 0 0 0 0
+GantryCraneName=¡˙√≈µı1
+Identifier=GRAPHIC_GANTRYCRANE_POSITION
+Left=0
+MaterialLength=0.5
+Right=1
+Sensor0_DataIdentifier=0 0 0 0 0 0 0
+Sensor0_Forbid=0
+Sensor0_Pos=0
+Sensor1_DataIdentifier=0 0 0 0 0 0 0
+Sensor1_Forbid=0
+Sensor1_Pos=0.1666666667
+Sensor2_DataIdentifier=0 0 0 0 0 0 0
+Sensor2_Forbid=0
+Sensor2_Pos=0.3333333333
+Sensor3_DataIdentifier=0 0 0 0 0 0 0
+Sensor3_Forbid=0
+Sensor3_Pos=0.5
+Top=0
+

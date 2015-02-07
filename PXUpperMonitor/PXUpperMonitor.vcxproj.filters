@@ -1,0 +1,1028 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\DataHandle">
+      <UniqueIdentifier>{b5405692-2304-4d8e-a07f-29bc65944f3b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\DataHandle">
+      <UniqueIdentifier>{f3745ed3-1c01-4455-823b-bd1daeb010ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\PCIHeaders">
+      <UniqueIdentifier>{76defc24-ef5c-4e03-9b10-df69dac2794b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\PAPCI-2Headers">
+      <UniqueIdentifier>{a04a736b-9a0b-4dce-9afc-45dac6e383a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Graphics">
+      <UniqueIdentifier>{f371ed71-65cd-42b3-8092-259101a5b1eb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Graphics">
+      <UniqueIdentifier>{251731bc-81c2-44e1-9490-11693820d5eb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\GL">
+      <UniqueIdentifier>{3e643843-4438-4fb3-8340-503ac0af87e6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Settings">
+      <UniqueIdentifier>{a3a2aefc-d303-46ae-96b2-7a0f77f4a076}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Settings">
+      <UniqueIdentifier>{8bca491f-2a5c-414d-8d29-0c2cf67303a6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\UA306Headers">
+      <UniqueIdentifier>{072a9843-d41b-4865-af26-fa8d90e157fc}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="res\file_view.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\file_view_hc.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\class_view.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\class_view_hc.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\fileview.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\fileview_hc.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\classview.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\classview_hc.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\explorer.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\explorer_hc.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\sort.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\sort_hc.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\menuimages.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\menuimages_hc.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\output_wnd.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\output_wnd_hc.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\properties_wnd.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\properties_wnd_hc.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\properties.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\properties_hc.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="UserImages.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\PXUpperMonitor.rc2">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\PXUpperMonitorDoc.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\PXUpperMonitor.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Toolbar.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Toolbar256.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\mainfram.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\bmp00001.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Images\test.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\properti.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\bmp00002.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Images\list_wave.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Images\icon_arrow.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Images\list_arrow.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Images\icon_wave.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\cursor1.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\cur00001.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\cur00002.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\bmp00003.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\cursor2.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\icon1.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\bitmap1.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Images\title.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\idr_main.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ico00001.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Images\icon_arg.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Images\list_arg.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Images\icon_relation.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Images\list_relation.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\graphic_.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Images\icon_scatter.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Images\list_scatter.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Images\icon_linear_position.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Images\list_linear_position.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Images\icon_plane_position.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Images\list_plane_position.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Images\icon_sphere.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Images\list_sphere.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Images\SphereFace.BMP">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\bitmap_s.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Images\icon_cylinder_position.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Images\list_cylinder_position.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Images\icon_cylinder_surface.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Images\list_cylinder_surface.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Images\icon_fft.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Images\list_fft.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Images\icon_crack_position.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Images\list_crack_position.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Images\icon_3dcrack_position.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Images\list_3dcrack_position.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Images\icon_signal_attenuation.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Images\list_signal_attenuation.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\bitmap2.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Images\icon_gl.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Images\icon_gantry_crane.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="PXUpperMonitor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MainFrm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ChildFrm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PXUpperMonitorDoc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PXUpperMonitorView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ViewTree.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OutputWnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DataHandle\LinearTransfer.h">
+      <Filter>Header Files\DataHandle</Filter>
+    </ClInclude>
+    <ClInclude Include="DataHandle\ListBuffer.h">
+      <Filter>Header Files\DataHandle</Filter>
+    </ClInclude>
+    <ClInclude Include="DataHandle\ObserverProtocol.h">
+      <Filter>Header Files\DataHandle</Filter>
+    </ClInclude>
+    <ClInclude Include="DataHandle\USBHandler.h">
+      <Filter>Header Files\DataHandle</Filter>
+    </ClInclude>
+    <ClInclude Include="DataHandle\ArrayBuffer.h">
+      <Filter>Header Files\DataHandle</Filter>
+    </ClInclude>
+    <ClInclude Include="DataHandle\BufferProtocol.h">
+      <Filter>Header Files\DataHandle</Filter>
+    </ClInclude>
+    <ClInclude Include="DataHandle\DataFileHeader.h">
+      <Filter>Header Files\DataHandle</Filter>
+    </ClInclude>
+    <ClInclude Include="DataHandle\DataHandler.h">
+      <Filter>Header Files\DataHandle</Filter>
+    </ClInclude>
+    <ClInclude Include="DataHandle\DataTransferProtocol.h">
+      <Filter>Header Files\DataHandle</Filter>
+    </ClInclude>
+    <ClInclude Include="DataHandle\FileObserver.h">
+      <Filter>Header Files\DataHandle</Filter>
+    </ClInclude>
+    <ClInclude Include="PCIHeaders\PARAS.H">
+      <Filter>Header Files\PCIHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="PCIHeaders\USBErrorCode.h">
+      <Filter>Header Files\PCIHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="PCIHeaders\COMM.H">
+      <Filter>Header Files\PCIHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="PCIHeaders\DEVICE.H">
+      <Filter>Header Files\PCIHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="PCIHeaders\DNET.H">
+      <Filter>Header Files\PCIHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="PCIHeaders\Driver.h">
+      <Filter>Header Files\PCIHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="PCIHeaders\EVENT.H">
+      <Filter>Header Files\PCIHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="PCIHeaders\OS.H">
+      <Filter>Header Files\PCIHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="DataHandle\CycleBuffer.h">
+      <Filter>Header Files\DataHandle</Filter>
+    </ClInclude>
+    <ClInclude Include="DataHandle\ThreadControlEx.h">
+      <Filter>Header Files\DataHandle</Filter>
+    </ClInclude>
+    <ClInclude Include="GraghicWnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DeviceView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ListCtrlEx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ChooseColumnDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DataHandle\INIConfig.h">
+      <Filter>Header Files\DataHandle</Filter>
+    </ClInclude>
+    <ClInclude Include="DataHandle\IndexManager.h">
+      <Filter>Header Files\DataHandle</Filter>
+    </ClInclude>
+    <ClInclude Include="DataHandle\DeviceManager.h">
+      <Filter>Header Files\DataHandle</Filter>
+    </ClInclude>
+    <ClInclude Include="DataHandle\DataTypes.h">
+      <Filter>Header Files\DataHandle</Filter>
+    </ClInclude>
+    <ClInclude Include="DataHandle\DeviceTypes.h">
+      <Filter>Header Files\DataHandle</Filter>
+    </ClInclude>
+    <ClInclude Include="DataHandle\AdPCIHandler.h">
+      <Filter>Header Files\DataHandle</Filter>
+    </ClInclude>
+    <ClInclude Include="DataHandle\AdPCI1714Handler.h">
+      <Filter>Header Files\DataHandle</Filter>
+    </ClInclude>
+    <ClInclude Include="DataHandle\DeviceInfo.h">
+      <Filter>Header Files\DataHandle</Filter>
+    </ClInclude>
+    <ClInclude Include="DataExportToTXT.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="HSLogProtocol.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DataHandle\CyAPI.h">
+      <Filter>Header Files\DataHandle</Filter>
+    </ClInclude>
+    <ClInclude Include="DataHandle\PAPCI-2Handler.h">
+      <Filter>Header Files\DataHandle</Filter>
+    </ClInclude>
+    <ClInclude Include="DataHandle\ArgTableManager.h">
+      <Filter>Header Files\DataHandle</Filter>
+    </ClInclude>
+    <ClInclude Include="DataHandle\ArgListTransfer.h">
+      <Filter>Header Files\DataHandle</Filter>
+    </ClInclude>
+    <ClInclude Include="DataHandle\ArgDataFectcher.h">
+      <Filter>Header Files\DataHandle</Filter>
+    </ClInclude>
+    <ClInclude Include="ArgListCtrl.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="ArgProperty.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="ArgTable.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="GraphicManager.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="GraphicRelation.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="GraphicScatter.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="GraphicWave.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="ScatterProperty.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="StaticArg.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="StaticGraphic.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="RelationProperty.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="WaveProperty.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="StaticTitle.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="StaticScatter.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="StaticRelation.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="StaticGrid.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="LinearPosition.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="LinearPositionProperty.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="StaticLinearPosition.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="StaticPlanePosition.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="PlanePosition.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="PlanePositionProperty.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="DataHandle\ArgCalculator.h">
+      <Filter>Header Files\DataHandle</Filter>
+    </ClInclude>
+    <ClInclude Include="GL\glut.h">
+      <Filter>Header Files\GL</Filter>
+    </ClInclude>
+    <ClInclude Include="SpherePosition.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="SphereProperty.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="StaticSpherePosition.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="GraphicSphere.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="BmpLoader.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="GLDataTypes.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="DataExportHelper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DataHandle\DataIdentifier.h">
+      <Filter>Header Files\DataHandle</Filter>
+    </ClInclude>
+    <ClInclude Include="CylinderPosition.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="CylinderPositionProperty.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="GraphicCylinder.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="StaticCylinderPosition.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="GlFont.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DataHandle\NewtonIterator.h">
+      <Filter>Header Files\DataHandle</Filter>
+    </ClInclude>
+    <ClInclude Include="DataHandle\PlanePositionCalulator.h">
+      <Filter>Header Files\DataHandle</Filter>
+    </ClInclude>
+    <ClInclude Include="CylinderSurfacePosition.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="CylinderSurfacePositionProperty.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="StaticCylinderSurfacePosition.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="GraphicCylinderSurface.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="DataHandle\USBControlCommand.h">
+      <Filter>Header Files\DataHandle</Filter>
+    </ClInclude>
+    <ClInclude Include="DataHandle\ArgHandler.h">
+      <Filter>Header Files\DataHandle</Filter>
+    </ClInclude>
+    <ClInclude Include="AutoAlignManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PCI1714SettingView.h">
+      <Filter>Header Files\Settings</Filter>
+    </ClInclude>
+    <ClInclude Include="PCI1714SettingDoc.h">
+      <Filter>Header Files\Settings</Filter>
+    </ClInclude>
+    <ClInclude Include="EasyUSBSettingView.h">
+      <Filter>Header Files\Settings</Filter>
+    </ClInclude>
+    <ClInclude Include="EasyUSBSettingDoc.h">
+      <Filter>Header Files\Settings</Filter>
+    </ClInclude>
+    <ClInclude Include="PCI2SettingDoc.h">
+      <Filter>Header Files\Settings</Filter>
+    </ClInclude>
+    <ClInclude Include="PCI2SettingView.h">
+      <Filter>Header Files\Settings</Filter>
+    </ClInclude>
+    <ClInclude Include="DataHandle\PAPCI-2ArgFetcher.h">
+      <Filter>Header Files\DataHandle</Filter>
+    </ClInclude>
+    <ClInclude Include="DataHandle\FourierTransform.h">
+      <Filter>Header Files\DataHandle</Filter>
+    </ClInclude>
+    <ClInclude Include="GraphicFFTProperty.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="GraphicFFT.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="StaticFFT.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="DataHandle\ARB1410-Handler.h">
+      <Filter>Header Files\DataHandle</Filter>
+    </ClInclude>
+    <ClInclude Include="PAPCI-2Headers\DLL.H">
+      <Filter>Header Files\PAPCI-2Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="PAPCI-2Headers\PACP2LV.H">
+      <Filter>Header Files\PAPCI-2Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="PAPCI-2Headers\pacpci2.h">
+      <Filter>Header Files\PAPCI-2Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="ARB1410SettingDoc.h">
+      <Filter>Header Files\Settings</Filter>
+    </ClInclude>
+    <ClInclude Include="ARB1410SettingView.h">
+      <Filter>Header Files\Settings</Filter>
+    </ClInclude>
+    <ClInclude Include="DataHandle\UA306Handler.h">
+      <Filter>Header Files\DataHandle</Filter>
+    </ClInclude>
+    <ClInclude Include="UA306Headers\ua300.h">
+      <Filter>Header Files\UA306Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="UA306SettingView.h">
+      <Filter>Header Files\Settings</Filter>
+    </ClInclude>
+    <ClInclude Include="UA306SettingDoc.h">
+      <Filter>Header Files\Settings</Filter>
+    </ClInclude>
+    <ClInclude Include="CrackPosition.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="CrackPositionProperty.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="StaticCrackPosition.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="DataHandle\GrahamCalLine.h">
+      <Filter>Header Files\DataHandle</Filter>
+    </ClInclude>
+    <ClInclude Include="C3DCrackPositionProperty.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="C3DCrackPosition.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Static3DCrackPosition.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="DataHandle\DLLLoader.h">
+      <Filter>Header Files\DataHandle</Filter>
+    </ClInclude>
+    <ClInclude Include="PXLicenseProtocol.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="VirtualHitPosition.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="WaveGenProtocol.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DataHandle\WaveGenClient.h">
+      <Filter>Header Files\DataHandle</Filter>
+    </ClInclude>
+    <ClInclude Include="HSNetStreamProtocol.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SignalAttenuationCurve.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="SignalAttenuationCurveProperty.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="StaticSignalAttenuation.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="NormalGraphic.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="NormalProperty.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DataHandle\ListItemManager.h">
+      <Filter>Header Files\DataHandle</Filter>
+    </ClInclude>
+    <ClInclude Include="GraphicNormal3D.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="BoilerPosition.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="BoilerPositionProperty.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="StaticBoilerPosition.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="GantryCranePosition.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="GantryCranePositionProperty.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="StaticGantryCranePosition.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="GraphicGantryCrane.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="PXUpperMonitor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MainFrm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ChildFrm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PXUpperMonitorDoc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PXUpperMonitorView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ViewTree.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DataHandle\USBHandler.cpp">
+      <Filter>Source Files\DataHandle</Filter>
+    </ClCompile>
+    <ClCompile Include="DataHandle\ArrayBuffer.cpp">
+      <Filter>Source Files\DataHandle</Filter>
+    </ClCompile>
+    <ClCompile Include="DataHandle\DataFileHeader.cpp">
+      <Filter>Source Files\DataHandle</Filter>
+    </ClCompile>
+    <ClCompile Include="DataHandle\FileObserver.cpp">
+      <Filter>Source Files\DataHandle</Filter>
+    </ClCompile>
+    <ClCompile Include="DataHandle\LinearTransfer.cpp">
+      <Filter>Source Files\DataHandle</Filter>
+    </ClCompile>
+    <ClCompile Include="DataHandle\ListBuffer.cpp">
+      <Filter>Source Files\DataHandle</Filter>
+    </ClCompile>
+    <ClCompile Include="GraghicWnd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DeviceView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ListCtrlEx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ChooseColumnDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DataHandle\INIConfig.cpp">
+      <Filter>Source Files\DataHandle</Filter>
+    </ClCompile>
+    <ClCompile Include="DataHandle\IndexManager.cpp">
+      <Filter>Source Files\DataHandle</Filter>
+    </ClCompile>
+    <ClCompile Include="DataHandle\DeviceManager.cpp">
+      <Filter>Source Files\DataHandle</Filter>
+    </ClCompile>
+    <ClCompile Include="DataHandle\AdPCIHandler.cpp">
+      <Filter>Source Files\DataHandle</Filter>
+    </ClCompile>
+    <ClCompile Include="DataHandle\AdPCI1714Handler.cpp">
+      <Filter>Source Files\DataHandle</Filter>
+    </ClCompile>
+    <ClCompile Include="DataHandle\DeviceInfo.cpp">
+      <Filter>Source Files\DataHandle</Filter>
+    </ClCompile>
+    <ClCompile Include="DataExportToTXT.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DataHandle\PAPCI-2Handler.cpp">
+      <Filter>Source Files\DataHandle</Filter>
+    </ClCompile>
+    <ClCompile Include="DataHandle\ArgTableManager.cpp">
+      <Filter>Source Files\DataHandle</Filter>
+    </ClCompile>
+    <ClCompile Include="DataHandle\ArgListTransfer.cpp">
+      <Filter>Source Files\DataHandle</Filter>
+    </ClCompile>
+    <ClCompile Include="OutputWnd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ArgListCtrl.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="ArgProperty.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="ArgTable.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="GraphicManager.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="GraphicRelation.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="GraphicScatter.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="GraphicWave.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="LinearPosition.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="LinearPositionProperty.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="StaticArg.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="StaticGraphic.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="StaticGrid.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="StaticLinearPosition.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="StaticRelation.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="StaticScatter.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="StaticTitle.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="WaveProperty.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="ScatterProperty.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="RelationProperty.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="StaticPlanePosition.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="PlanePositionProperty.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="PlanePosition.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="DataHandle\ArgCalculator.cpp">
+      <Filter>Source Files\DataHandle</Filter>
+    </ClCompile>
+    <ClCompile Include="SphereProperty.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="SpherePosition.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="StaticSpherePosition.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="GraphicSphere.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="CylinderPosition.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="CylinderPositionProperty.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="GraphicCylinder.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="StaticCylinderPosition.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="GlFont.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CylinderSurfacePositionProperty.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="CylinderSurfacePosition.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="StaticCylinderSurfacePosition.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="GraphicCylinderSurface.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="DataHandle\USBControlCommand.cpp">
+      <Filter>Source Files\DataHandle</Filter>
+    </ClCompile>
+    <ClCompile Include="DataHandle\ArgHandler.cpp">
+      <Filter>Source Files\DataHandle</Filter>
+    </ClCompile>
+    <ClCompile Include="AutoAlignManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PCI1714SettingView.cpp">
+      <Filter>Source Files\Settings</Filter>
+    </ClCompile>
+    <ClCompile Include="PCI1714SettingDoc.cpp">
+      <Filter>Source Files\Settings</Filter>
+    </ClCompile>
+    <ClCompile Include="EasyUSBSettingView.cpp">
+      <Filter>Source Files\Settings</Filter>
+    </ClCompile>
+    <ClCompile Include="EasyUSBSettingDoc.cpp">
+      <Filter>Source Files\Settings</Filter>
+    </ClCompile>
+    <ClCompile Include="PCI2SettingDoc.cpp">
+      <Filter>Source Files\Settings</Filter>
+    </ClCompile>
+    <ClCompile Include="PCI2SettingView.cpp">
+      <Filter>Source Files\Settings</Filter>
+    </ClCompile>
+    <ClCompile Include="DataHandle\PAPCI-2ArgFetcher.cpp">
+      <Filter>Source Files\DataHandle</Filter>
+    </ClCompile>
+    <ClCompile Include="GraphicFFT.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="GraphicFFTProperty.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="StaticFFT.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="DataHandle\ARB1410-Handler.cpp">
+      <Filter>Source Files\DataHandle</Filter>
+    </ClCompile>
+    <ClCompile Include="ARB1410SettingView.cpp">
+      <Filter>Source Files\Settings</Filter>
+    </ClCompile>
+    <ClCompile Include="ARB1410SettingDoc.cpp">
+      <Filter>Source Files\Settings</Filter>
+    </ClCompile>
+    <ClCompile Include="DataHandle\UA306Handler.cpp">
+      <Filter>Source Files\DataHandle</Filter>
+    </ClCompile>
+    <ClCompile Include="UA306SettingView.cpp">
+      <Filter>Source Files\Settings</Filter>
+    </ClCompile>
+    <ClCompile Include="UA306SettingDoc.cpp">
+      <Filter>Source Files\Settings</Filter>
+    </ClCompile>
+    <ClCompile Include="CrackPositionProperty.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="CrackPosition.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="StaticCrackPosition.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="C3DCrackPositionProperty.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="C3DCrackPosition.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Static3DCrackPosition.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="DataHandle\DLLLoader.cpp">
+      <Filter>Source Files\DataHandle</Filter>
+    </ClCompile>
+    <ClCompile Include="DataHandle\WaveGenClient.cpp">
+      <Filter>Source Files\DataHandle</Filter>
+    </ClCompile>
+    <ClCompile Include="SignalAttenuationCurveProperty.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="SignalAttenuationCurve.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="StaticSignalAttenuation.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="NormalGraphic.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="NormalProperty.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DataHandle\ListItemManager.cpp">
+      <Filter>Source Files\DataHandle</Filter>
+    </ClCompile>
+    <ClCompile Include="GraphicNormal3D.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="BoilerPosition.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="BoilerPositionProperty.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="StaticBoilerPosition.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="GantryCranePosition.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="GantryCranePositionProperty.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="StaticGantryCranePosition.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="GraphicGantryCrane.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="PXUpperMonitor.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

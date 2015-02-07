@@ -1,0 +1,449 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{8D52432B-1E52-4151-AACE-F4C938ABEDF3}</ProjectGuid>
+    <RootNamespace>PXUpperMonitor</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)/DataHandle;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>CyAPI.lib;Adsapi32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalOptions>/FORCE:MULTIPLE %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)/DataHandle;$(ProjectDir)/PAPCI-2Headers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>CyAPI.lib;Adsapi32.lib;glut32.lib;glut.lib;PacPci2.lib;ua300.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="Images\icon_3dcrack_position.bmp" />
+    <None Include="Images\icon_arg.bmp" />
+    <None Include="Images\icon_arrow.bmp" />
+    <None Include="Images\icon_crack_position.bmp" />
+    <None Include="Images\icon_cylinder_position.bmp" />
+    <None Include="Images\icon_cylinder_surface.bmp" />
+    <None Include="Images\icon_fft.bmp" />
+    <None Include="Images\icon_gantry_crane.bmp" />
+    <None Include="Images\icon_gl.bmp" />
+    <None Include="Images\icon_linear_position.bmp" />
+    <None Include="Images\icon_plane_position.bmp" />
+    <None Include="Images\icon_relation.bmp" />
+    <None Include="Images\icon_scatter.bmp" />
+    <None Include="Images\icon_signal_attenuation.bmp" />
+    <None Include="Images\icon_sphere.bmp" />
+    <None Include="Images\icon_wave.bmp" />
+    <None Include="Images\list_3dcrack_position.bmp" />
+    <None Include="Images\list_arg.bmp" />
+    <None Include="Images\list_arrow.bmp" />
+    <None Include="Images\list_crack_position.bmp" />
+    <None Include="Images\list_cylinder_position.bmp" />
+    <None Include="Images\list_cylinder_surface.bmp" />
+    <None Include="Images\list_fft.bmp" />
+    <None Include="Images\list_linear_position.bmp" />
+    <None Include="Images\list_plane_position.bmp" />
+    <None Include="Images\list_relation.bmp" />
+    <None Include="Images\list_scatter.bmp" />
+    <None Include="Images\list_signal_attenuation.bmp" />
+    <None Include="Images\list_sphere.bmp" />
+    <None Include="Images\list_wave.bmp" />
+    <None Include="Images\SphereFace.BMP" />
+    <None Include="Images\test.bmp" />
+    <None Include="Images\title.bmp" />
+    <None Include="ReadMe.txt" />
+    <None Include="res\bitmap1.bmp" />
+    <None Include="res\bitmap2.bmp" />
+    <None Include="res\bitmap_s.bmp" />
+    <None Include="res\bmp00001.bmp" />
+    <None Include="res\bmp00002.bmp" />
+    <None Include="res\bmp00003.bmp" />
+    <None Include="res\classview.bmp" />
+    <None Include="res\classview_hc.bmp" />
+    <None Include="res\class_view.ico" />
+    <None Include="res\class_view_hc.ico" />
+    <None Include="res\cur00001.cur" />
+    <None Include="res\cur00002.cur" />
+    <None Include="res\cursor1.cur" />
+    <None Include="res\cursor2.cur" />
+    <None Include="res\explorer.bmp" />
+    <None Include="res\explorer_hc.bmp" />
+    <None Include="res\fileview.bmp" />
+    <None Include="res\fileview_hc.bmp" />
+    <None Include="res\file_view.ico" />
+    <None Include="res\file_view_hc.ico" />
+    <None Include="res\graphic_.bmp" />
+    <None Include="res\ico00001.ico" />
+    <None Include="res\icon1.ico" />
+    <None Include="res\idr_main.ico" />
+    <None Include="res\mainfram.bmp" />
+    <None Include="res\menuimages.bmp" />
+    <None Include="res\menuimages_hc.bmp" />
+    <None Include="res\output_wnd.ico" />
+    <None Include="res\output_wnd_hc.ico" />
+    <None Include="res\properti.bmp" />
+    <None Include="res\properties.bmp" />
+    <None Include="res\properties_hc.bmp" />
+    <None Include="res\properties_wnd.ico" />
+    <None Include="res\properties_wnd_hc.ico" />
+    <None Include="res\PXUpperMonitor.ico" />
+    <None Include="res\PXUpperMonitor.rc2" />
+    <None Include="res\PXUpperMonitorDoc.ico" />
+    <None Include="res\sort.bmp" />
+    <None Include="res\sort_hc.bmp" />
+    <None Include="res\Toolbar.bmp" />
+    <None Include="res\Toolbar256.bmp" />
+    <None Include="UserImages.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ARB1410SettingDoc.h" />
+    <ClInclude Include="ARB1410SettingView.h" />
+    <ClInclude Include="ArgListCtrl.h" />
+    <ClInclude Include="ArgProperty.h" />
+    <ClInclude Include="ArgTable.h" />
+    <ClInclude Include="AutoAlignManager.h" />
+    <ClInclude Include="BmpLoader.h" />
+    <ClInclude Include="BoilerPosition.h" />
+    <ClInclude Include="BoilerPositionProperty.h" />
+    <ClInclude Include="C3DCrackPosition.h" />
+    <ClInclude Include="C3DCrackPositionProperty.h" />
+    <ClInclude Include="CrackPosition.h" />
+    <ClInclude Include="CrackPositionProperty.h" />
+    <ClInclude Include="CylinderPosition.h" />
+    <ClInclude Include="CylinderPositionProperty.h" />
+    <ClInclude Include="CylinderSurfacePosition.h" />
+    <ClInclude Include="CylinderSurfacePositionProperty.h" />
+    <ClInclude Include="DataExportHelper.h" />
+    <ClInclude Include="DataHandle\ARB1410-Handler.h" />
+    <ClInclude Include="DataHandle\ArgHandler.h" />
+    <ClInclude Include="DataHandle\DataIdentifier.h" />
+    <ClInclude Include="DataHandle\DLLLoader.h" />
+    <ClInclude Include="DataHandle\FourierTransform.h" />
+    <ClInclude Include="DataHandle\GrahamCalLine.h" />
+    <ClInclude Include="DataHandle\ListItemManager.h" />
+    <ClInclude Include="DataHandle\NewtonIterator.h" />
+    <ClInclude Include="DataHandle\PAPCI-2ArgFetcher.h" />
+    <ClInclude Include="DataHandle\PlanePositionCalulator.h" />
+    <ClInclude Include="DataHandle\UA306Handler.h" />
+    <ClInclude Include="DataHandle\USBControlCommand.h" />
+    <ClInclude Include="DataHandle\WaveGenClient.h" />
+    <ClInclude Include="EasyUSBSettingDoc.h" />
+    <ClInclude Include="EasyUSBSettingView.h" />
+    <ClInclude Include="GantryCranePosition.h" />
+    <ClInclude Include="GantryCranePositionProperty.h" />
+    <ClInclude Include="GLDataTypes.h" />
+    <ClInclude Include="ChildFrm.h" />
+    <ClInclude Include="ChooseColumnDlg.h" />
+    <ClInclude Include="DataExportToTXT.h" />
+    <ClInclude Include="DataHandle\AdPCI1714Handler.h" />
+    <ClInclude Include="DataHandle\ArgCalculator.h" />
+    <ClInclude Include="DataHandle\ArgDataFectcher.h" />
+    <ClInclude Include="DataHandle\ArgListTransfer.h" />
+    <ClInclude Include="DataHandle\ArgTableManager.h" />
+    <ClInclude Include="DataHandle\ArrayBuffer.h" />
+    <ClInclude Include="DataHandle\BufferProtocol.h" />
+    <ClInclude Include="DataHandle\CyAPI.h" />
+    <ClInclude Include="DataHandle\CycleBuffer.h" />
+    <ClInclude Include="DataHandle\DataFileHeader.h" />
+    <ClInclude Include="DataHandle\DataHandler.h" />
+    <ClInclude Include="DataHandle\DataTransferProtocol.h" />
+    <ClInclude Include="DataHandle\DataTypes.h" />
+    <ClInclude Include="DataHandle\DeviceInfo.h" />
+    <ClInclude Include="DataHandle\DeviceManager.h" />
+    <ClInclude Include="DataHandle\DeviceTypes.h" />
+    <ClInclude Include="DataHandle\FileObserver.h" />
+    <ClInclude Include="DataHandle\IndexManager.h" />
+    <ClInclude Include="DataHandle\INIConfig.h" />
+    <ClInclude Include="DataHandle\LinearTransfer.h" />
+    <ClInclude Include="DataHandle\ListBuffer.h" />
+    <ClInclude Include="DataHandle\ObserverProtocol.h" />
+    <ClInclude Include="DataHandle\AdPCIHandler.h" />
+    <ClInclude Include="DataHandle\PAPCI-2Handler.h" />
+    <ClInclude Include="DataHandle\ThreadControlEx.h" />
+    <ClInclude Include="DataHandle\USBHandler.h" />
+    <ClInclude Include="DeviceView.h" />
+    <ClInclude Include="GlFont.h" />
+    <ClInclude Include="GL\glut.h" />
+    <ClInclude Include="GraphicCylinder.h" />
+    <ClInclude Include="GraphicCylinderSurface.h" />
+    <ClInclude Include="GraphicFFT.h" />
+    <ClInclude Include="GraphicFFTProperty.h" />
+    <ClInclude Include="GraphicGantryCrane.h" />
+    <ClInclude Include="GraphicManager.h" />
+    <ClInclude Include="GraphicNormal3D.h" />
+    <ClInclude Include="GraphicRelation.h" />
+    <ClInclude Include="GraphicScatter.h" />
+    <ClInclude Include="GraphicSphere.h" />
+    <ClInclude Include="GraphicWave.h" />
+    <ClInclude Include="HSLogProtocol.h" />
+    <ClInclude Include="HSNetStreamProtocol.h" />
+    <ClInclude Include="LinearPosition.h" />
+    <ClInclude Include="LinearPositionProperty.h" />
+    <ClInclude Include="ListCtrlEx.h" />
+    <ClInclude Include="MainFrm.h" />
+    <ClInclude Include="NormalGraphic.h" />
+    <ClInclude Include="NormalProperty.h" />
+    <ClInclude Include="OutputWnd.h" />
+    <ClInclude Include="PAPCI-2Headers\DLL.H" />
+    <ClInclude Include="PAPCI-2Headers\PACP2LV.H" />
+    <ClInclude Include="PAPCI-2Headers\pacpci2.h" />
+    <ClInclude Include="PCI1714SettingDoc.h" />
+    <ClInclude Include="PCI1714SettingView.h" />
+    <ClInclude Include="PCI2SettingDoc.h" />
+    <ClInclude Include="PCI2SettingView.h" />
+    <ClInclude Include="PCIHeaders\COMM.H" />
+    <ClInclude Include="PCIHeaders\DEVICE.H" />
+    <ClInclude Include="PCIHeaders\DNET.H" />
+    <ClInclude Include="PCIHeaders\Driver.h" />
+    <ClInclude Include="PCIHeaders\EVENT.H" />
+    <ClInclude Include="PCIHeaders\OS.H" />
+    <ClInclude Include="PCIHeaders\PARAS.H" />
+    <ClInclude Include="PCIHeaders\USBErrorCode.h" />
+    <ClInclude Include="GraghicWnd.h" />
+    <ClInclude Include="PlanePosition.h" />
+    <ClInclude Include="PlanePositionProperty.h" />
+    <ClInclude Include="PXLicenseProtocol.h" />
+    <ClInclude Include="PXUpperMonitor.h" />
+    <ClInclude Include="PXUpperMonitorDoc.h" />
+    <ClInclude Include="PXUpperMonitorView.h" />
+    <ClInclude Include="RelationProperty.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="ScatterProperty.h" />
+    <ClInclude Include="SignalAttenuationCurve.h" />
+    <ClInclude Include="SignalAttenuationCurveProperty.h" />
+    <ClInclude Include="SpherePosition.h" />
+    <ClInclude Include="SphereProperty.h" />
+    <ClInclude Include="Static3DCrackPosition.h" />
+    <ClInclude Include="StaticArg.h" />
+    <ClInclude Include="StaticBoilerPosition.h" />
+    <ClInclude Include="StaticCrackPosition.h" />
+    <ClInclude Include="StaticCylinderPosition.h" />
+    <ClInclude Include="StaticCylinderSurfacePosition.h" />
+    <ClInclude Include="StaticFFT.h" />
+    <ClInclude Include="StaticGantryCranePosition.h" />
+    <ClInclude Include="StaticGraphic.h" />
+    <ClInclude Include="StaticGrid.h" />
+    <ClInclude Include="StaticLinearPosition.h" />
+    <ClInclude Include="StaticPlanePosition.h" />
+    <ClInclude Include="StaticRelation.h" />
+    <ClInclude Include="StaticScatter.h" />
+    <ClInclude Include="StaticSignalAttenuation.h" />
+    <ClInclude Include="StaticSpherePosition.h" />
+    <ClInclude Include="StaticTitle.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="UA306Headers\ua300.h" />
+    <ClInclude Include="UA306SettingDoc.h" />
+    <ClInclude Include="UA306SettingView.h" />
+    <ClInclude Include="ViewTree.h" />
+    <ClInclude Include="VirtualHitPosition.h" />
+    <ClInclude Include="WaveGenProtocol.h" />
+    <ClInclude Include="WaveProperty.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ARB1410SettingDoc.cpp" />
+    <ClCompile Include="ARB1410SettingView.cpp" />
+    <ClCompile Include="ArgListCtrl.cpp" />
+    <ClCompile Include="ArgProperty.cpp" />
+    <ClCompile Include="ArgTable.cpp" />
+    <ClCompile Include="AutoAlignManager.cpp" />
+    <ClCompile Include="BoilerPosition.cpp" />
+    <ClCompile Include="BoilerPositionProperty.cpp" />
+    <ClCompile Include="C3DCrackPosition.cpp" />
+    <ClCompile Include="C3DCrackPositionProperty.cpp" />
+    <ClCompile Include="ChildFrm.cpp" />
+    <ClCompile Include="ChooseColumnDlg.cpp" />
+    <ClCompile Include="CrackPosition.cpp" />
+    <ClCompile Include="CrackPositionProperty.cpp" />
+    <ClCompile Include="CylinderPosition.cpp" />
+    <ClCompile Include="CylinderPositionProperty.cpp" />
+    <ClCompile Include="CylinderSurfacePosition.cpp" />
+    <ClCompile Include="CylinderSurfacePositionProperty.cpp" />
+    <ClCompile Include="DataExportToTXT.cpp" />
+    <ClCompile Include="DataHandle\AdPCI1714Handler.cpp" />
+    <ClCompile Include="DataHandle\ARB1410-Handler.cpp" />
+    <ClCompile Include="DataHandle\ArgCalculator.cpp" />
+    <ClCompile Include="DataHandle\ArgHandler.cpp" />
+    <ClCompile Include="DataHandle\ArgListTransfer.cpp" />
+    <ClCompile Include="DataHandle\ArgTableManager.cpp" />
+    <ClCompile Include="DataHandle\ArrayBuffer.cpp" />
+    <ClCompile Include="DataHandle\DataFileHeader.cpp" />
+    <ClCompile Include="DataHandle\DeviceInfo.cpp" />
+    <ClCompile Include="DataHandle\DeviceManager.cpp" />
+    <ClCompile Include="DataHandle\DLLLoader.cpp" />
+    <ClCompile Include="DataHandle\FileObserver.cpp" />
+    <ClCompile Include="DataHandle\IndexManager.cpp" />
+    <ClCompile Include="DataHandle\INIConfig.cpp" />
+    <ClCompile Include="DataHandle\LinearTransfer.cpp" />
+    <ClCompile Include="DataHandle\ListBuffer.cpp" />
+    <ClCompile Include="DataHandle\AdPCIHandler.cpp" />
+    <ClCompile Include="DataHandle\ListItemManager.cpp" />
+    <ClCompile Include="DataHandle\PAPCI-2ArgFetcher.cpp" />
+    <ClCompile Include="DataHandle\PAPCI-2Handler.cpp" />
+    <ClCompile Include="DataHandle\UA306Handler.cpp" />
+    <ClCompile Include="DataHandle\USBControlCommand.cpp" />
+    <ClCompile Include="DataHandle\USBHandler.cpp" />
+    <ClCompile Include="DataHandle\WaveGenClient.cpp" />
+    <ClCompile Include="DeviceView.cpp" />
+    <ClCompile Include="EasyUSBSettingDoc.cpp" />
+    <ClCompile Include="EasyUSBSettingView.cpp" />
+    <ClCompile Include="GantryCranePosition.cpp" />
+    <ClCompile Include="GantryCranePositionProperty.cpp" />
+    <ClCompile Include="GlFont.cpp" />
+    <ClCompile Include="GraphicCylinder.cpp" />
+    <ClCompile Include="GraphicCylinderSurface.cpp" />
+    <ClCompile Include="GraphicFFT.cpp" />
+    <ClCompile Include="GraphicFFTProperty.cpp" />
+    <ClCompile Include="GraphicGantryCrane.cpp" />
+    <ClCompile Include="GraphicManager.cpp" />
+    <ClCompile Include="GraphicNormal3D.cpp" />
+    <ClCompile Include="GraphicRelation.cpp" />
+    <ClCompile Include="GraphicScatter.cpp" />
+    <ClCompile Include="GraphicSphere.cpp" />
+    <ClCompile Include="GraphicWave.cpp" />
+    <ClCompile Include="LinearPosition.cpp" />
+    <ClCompile Include="LinearPositionProperty.cpp" />
+    <ClCompile Include="ListCtrlEx.cpp" />
+    <ClCompile Include="MainFrm.cpp" />
+    <ClCompile Include="NormalGraphic.cpp" />
+    <ClCompile Include="NormalProperty.cpp" />
+    <ClCompile Include="OutputWnd.cpp" />
+    <ClCompile Include="GraghicWnd.cpp" />
+    <ClCompile Include="PCI1714SettingDoc.cpp" />
+    <ClCompile Include="PCI1714SettingView.cpp" />
+    <ClCompile Include="PCI2SettingDoc.cpp" />
+    <ClCompile Include="PCI2SettingView.cpp" />
+    <ClCompile Include="PlanePosition.cpp" />
+    <ClCompile Include="PlanePositionProperty.cpp" />
+    <ClCompile Include="PXUpperMonitor.cpp" />
+    <ClCompile Include="PXUpperMonitorDoc.cpp" />
+    <ClCompile Include="PXUpperMonitorView.cpp" />
+    <ClCompile Include="RelationProperty.cpp" />
+    <ClCompile Include="ScatterProperty.cpp" />
+    <ClCompile Include="SignalAttenuationCurve.cpp" />
+    <ClCompile Include="SignalAttenuationCurveProperty.cpp" />
+    <ClCompile Include="SpherePosition.cpp" />
+    <ClCompile Include="SphereProperty.cpp" />
+    <ClCompile Include="Static3DCrackPosition.cpp" />
+    <ClCompile Include="StaticArg.cpp" />
+    <ClCompile Include="StaticBoilerPosition.cpp" />
+    <ClCompile Include="StaticCrackPosition.cpp" />
+    <ClCompile Include="StaticCylinderPosition.cpp" />
+    <ClCompile Include="StaticCylinderSurfacePosition.cpp" />
+    <ClCompile Include="StaticFFT.cpp" />
+    <ClCompile Include="StaticGantryCranePosition.cpp" />
+    <ClCompile Include="StaticGraphic.cpp" />
+    <ClCompile Include="StaticGrid.cpp" />
+    <ClCompile Include="StaticLinearPosition.cpp" />
+    <ClCompile Include="StaticPlanePosition.cpp" />
+    <ClCompile Include="StaticRelation.cpp" />
+    <ClCompile Include="StaticScatter.cpp" />
+    <ClCompile Include="StaticSignalAttenuation.cpp" />
+    <ClCompile Include="StaticSpherePosition.cpp" />
+    <ClCompile Include="StaticTitle.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="UA306SettingDoc.cpp" />
+    <ClCompile Include="UA306SettingView.cpp" />
+    <ClCompile Include="ViewTree.cpp" />
+    <ClCompile Include="WaveProperty.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="PXUpperMonitor.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="PXUpperMonitor.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
